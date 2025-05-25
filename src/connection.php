@@ -2,7 +2,7 @@
  function pingDb(): void{
      try {
         $conn = openDbConnection();
-        echo "connection Ok!";
+        echo "connection Ok! <br/>";
         $conn->close();
         echo "connection closed, ping OK <br>";
      } catch (Exeption $ex) {

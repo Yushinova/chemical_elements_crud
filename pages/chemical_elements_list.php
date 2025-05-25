@@ -39,6 +39,7 @@ $elements = selectAllElements();
                 <td>
                     <a href="/pages/chemical_element_delete.php?id=<?= $value->id ?>">Delete</a>
                     <a href="/pages/chemical_element_update.php?id=<?= $value->id ?>">Update</a>
+                    <a href="/pages/chemical_element_detale.php?id=<?= $value->id ?>">Details</a>
                 </td>
                </tr>
             <?php endforeach;?>

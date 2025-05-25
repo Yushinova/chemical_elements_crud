@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <?php endif; ?>
     
 
-    <a href="/pages/chemical_elements_list.php">List elements<br></a>
+    <a href="/pages/chemical_elements_list.php">List of elements<br></a>
     <a href="/index.php">Home</a>
 </body>
 </html>

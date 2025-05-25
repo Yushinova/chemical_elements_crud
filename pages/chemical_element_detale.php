@@ -17,6 +17,9 @@ if(isset($_GET["id"])){
     <title>Detale</title>
 </head>
 <body>
+    <?php if ($element === null): ?>
+        <p>Елемент не найден!</p>
+    <?php else: ?>
     <h2><?=$element->name ?></h2>
     <table>
         <thead>
@@ -42,6 +45,7 @@ if(isset($_GET["id"])){
             </tr>
         </tbody>
     </table>
+    <?php endif; ?>
     <br/>
     <a href="/index.php">Home</a>
     <a href="/pages/chemical_elements_list.php">List of elements</a>

@@ -1,0 +1,22 @@
+ #контейнер приложения
+services:
+  app:
+    container_name: chemical_elements_crud
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8080:80
+
+  db:
+    image: mysql
+    container_name: chemical_elements_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=chemical_elements_db
+    volumes:
+      - ./init-db:/docker-entrypoint-initdb.d
+    ports:
+      - 3307:3306

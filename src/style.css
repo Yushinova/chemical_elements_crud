@@ -1,0 +1,47 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.formCreate{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+.formUpdate{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    border-radius: 10px;
+    background-color: lightskyblue;
+}
+button{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+ table{
+     border-collapse: collapse;
+     margin: auto;
+     text-align: center;
+     width: 100%;
+ }
+  td, th{
+    border: 1px solid black;
+    padding: 3px;
+  }
+  thead{
+    background-color: aquamarine;
+  }
+  a{
+    text-decoration: none;
+    color: rgb(32, 132, 136);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+  }
+  a:hover{
+    background-color: cadetblue;
+    color: white;
+  }
